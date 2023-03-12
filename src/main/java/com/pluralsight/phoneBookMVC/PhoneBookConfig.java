@@ -32,7 +32,7 @@ public class PhoneBookConfig implements WebMvcConfigurer {
     @Bean
     public List<Customer> defaultData() {
         List<Customer> data = new ArrayList<>();
-        Set<String> numbers1 = new HashSet<>(Arrays.asList("+79601232233"));
+        Set<String> numbers1 = new HashSet<>(List.of("+79601232233"));
         Set<String> numbers2 = new HashSet<>(Arrays.asList("+79213215566", "+79213215567"));
         Customer customer1 = new Customer("Gena", numbers1);
         Customer customer2 = new Customer("Ivan", numbers2);
